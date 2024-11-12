@@ -62,6 +62,6 @@ workflows:
             - test
       - prod:
           type: approval
-	  requires:
-	    - integration
+          requires:
+            - integration
       - artifact
