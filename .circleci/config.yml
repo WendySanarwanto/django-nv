@@ -26,7 +26,7 @@ jobs:
           command: |
             echo "This is an integration step"
             exit 1
-          when: on_fail      # Even if the job fails, continue to the next jobs
+          when: always      # Even if the job fails, continue to the next jobs
 
   prod:
     docker:
@@ -58,5 +58,10 @@ workflows:
           requires:
             - build
       - integration
+	  requires:
+	    - test
       - prod
+	  type: approval
+	  requires:
+	    - integration
       - artifact
