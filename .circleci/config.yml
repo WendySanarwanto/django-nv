@@ -54,7 +54,9 @@ workflows:
             branches:
               only:
                 - main
-      - test
+      - test:
+          requires:
+            - build
       - integration
       - prod
       - artifact
