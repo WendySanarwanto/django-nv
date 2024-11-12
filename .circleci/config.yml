@@ -58,7 +58,7 @@ workflows:
           requires:
             - build
       - integration
-	  requires:
+          requires:
 	    - test
       - prod
 	  type: approval
