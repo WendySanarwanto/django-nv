@@ -16,16 +16,16 @@
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-AWS_ACCESS_KEY_ID = 'abc'
-AWS_SECRET_ACCESS_KEY = 'abc'
+AWS_ACCESS_KEY_ID = 'AKIAYVP4CIPPERUVIFXG'
+AWS_SECRET_ACCESS_KEY = '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'
 
-SLACK_API_TOKEN = 'abc'
+SLACK_API_TOKEN = 'xoxp-4797898847-4799393255-4778181812-f140b6'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'abc'
+SECRET_KEY = '0yxzudryd8)-%)(fz&7q-!v&cq1u6vbfoc4u7@u_&i)b@4eh^q'
 
 # A5: Security Misconfiguration
 # SECURITY WARNING: don't run with debug turned on in production!
