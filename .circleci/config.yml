@@ -49,36 +49,8 @@ workflows:
   version: 2
   django:
     jobs:
-      - build:
-          filters:          # Run the job with a specific branch
-            branches:
-              only:
-                - main
-      - test:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - main
-      - integration:
-          requires:
-            - test
-          filters:
-            branches:
-              only:
-                - main
-      - prod:
-          requires:
-            - integration
-          filters:
-            branches:
-              only:
-                - main
-      - artifact:
-          requires:
-            - prod
-          filters:
-            branches:
-              only:
-                - main
+      - build
+      - test
+      - integration
+      - prod
+      - artifact
